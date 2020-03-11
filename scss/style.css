@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("OpenSans"), local("OpenSans-Regular"), url("../fonts/open-sans-regular.woff2") format("woff2"), url("../fonts/open-sans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local("OpenSans-SemiBold"), local("Open Sans SemiBold"), url("../fonts/open-sans-600.woff2") format("woff2"), url("../fonts/open-sans-600.woff") format("woff");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container {
+  padding: 0 40px;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.container--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container--between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.burger,
+.burger::before,
+.burger::after {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.burger::before {
+  content: '';
+  top: -5px;
+  background-color: #fff;
+}
+
+.burger::after {
+  content: '';
+  top: 5px;
+  background-color: #fff;
+}
+
+.header__top {
+  background-color: #3d4248;
+}
+
+.header__bottom {
+  padding: 24px 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-menu__item {
+  margin-left: 40px;
+}
+
+.top-menu__link {
+  padding: 8px 0;
+  display: block;
+  color: #dcdcdc;
+  font-size: 0.75em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.top-menu__link:hover {
+  color: #fa7e19;
+}
+
+.main-menu__mobile {
+  display: none;
+}
+
+.main-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-menu__link {
+  padding: 5px 20px;
+  display: block;
+  color: #333333;
+}
+
+.main-menu__link:hover {
+  color: #fa7e19;
+}
+
+.main-menu__link--catalog {
+  position: relative;
+  padding-right: 43px;
+  color: #fff;
+  background-color: #fa7e19;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.main-menu__link--catalog .burger {
+  top: 15px;
+  right: 15px;
+}
+
+.main-menu__link--catalog:hover {
+  color: #fff;
+  background-color: #3d4248;
+}
+
+.h-contacts {
+  margin-left: 90px;
+}
+
+.h-contacts__phone {
+  position: relative;
+  padding-right: 40px;
+  font-size: 1.5em;
+  color: #333333;
+}
+
+.h-contacts__phone::after {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/callback-phone.png");
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.h-contacts__phone:hover {
+  opacity: 0.8;
+}
+
+.h-contacts__phone:hover::after {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.h-contacts__txt {
+  padding-left: 30px;
+  font-size: 0.6em;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.slider {
+  height: 500px;
+  background-color: #e8e8e8;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #3d4248;
+}
+
+.copyright {
+  font-size: 0.75em;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
