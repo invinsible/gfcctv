@@ -35,8 +35,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -72,7 +72,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;  
     font-weight: 400;  
-    line-height: 1.5;    
+    line-height: 1.5;  
+    color: #333333;  
 }
 
 .container {
@@ -129,6 +130,42 @@ body {
 //     transform: rotate(145deg);
 // }
 
+
+
+
+.btn {
+    position: relative;
+    padding: 10px 17px;
+    display: inline-block;     
+    font-size: 0.85em;
+    color: #3d4248;   
+    text-align: center; 
+    border: 2px solid #3d4248;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &--callback {
+        color: #ff8c38;
+        border-color: #f3997b;
+
+        svg {
+            margin-right: 17px;
+            fill: #fa7e19;    
+            vertical-align: middle;       
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #fa7e19;
+
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
 
 
 
@@ -220,22 +257,18 @@ body {
         font-size: 1.5em;
         color: #333333;        
 
-        &::after {
+        svg {
             position: absolute;
             right: 0;
-            top: 8px;
-            content: '';
-            width: 24px;
-            height: 24px;
-            background-image: url('../img/callback-phone.png');
-            background-repeat: no-repeat;
+            top: 8px;    
+            fill: #ff8c38;        
             transition: 0.3s;
         }
 
         &:hover  {
             opacity: 0.8;
 
-            &::after {
+            svg {
                 transform: rotate(15deg);
             }            
         }
@@ -256,12 +289,62 @@ body {
 }
 
 
+.contact-us {
+    padding: 19px 19px 19px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #fa7e19;
+
+    &__txt {
+       font-size: 1.1em;
+       font-weight: 600; 
+    }
+}
+
+
+/* FOOTER PART */
+
 .footer {
     padding: 40px 0;
     background-color: #3d4248;
+    border-top: 1px solid #fff;
+
+    &__left,
+    &__right {
+        display: flex; 
+        align-items: center;       
+    }
+    
 }
 
 .copyright {
+    margin-top: 10px;
+    margin-left: 40px;
     font-size: 0.75em;
-    color: #fff;
+    line-height: 1.25;
+    color: #eeeeee;
+}
+
+.social {
+    margin-right: 60px;
+    display: flex;
+
+    &__item {
+        margin-left: 25px;
+    }
+
+    &__link {
+
+        svg {
+            fill: #fff;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            svg {
+                fill: #fa7e19;
+            }
+        }
+    }
 }
