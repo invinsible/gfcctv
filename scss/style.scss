@@ -155,7 +155,7 @@ input[type="radio"].visually-hidden {
 
 .btn {
     position: relative;
-    padding: 10px 17px;
+    padding: 6px 25px;
     display: inline-block;     
     font-size: 0.85em;
     color: #3d4248;   
@@ -166,7 +166,18 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
     transition: 0.3s;
 
+    &--orange {
+        color: #fa7e19;
+        border-color: #fa7e19;
+
+        &:hover {
+            background-color: #fa7e19;
+            color: #fff;
+        }
+    }
+
     &--callback {
+        padding: 10px 17px;
         color: #ff8c38;
         border-color: #f3997b;
 
@@ -327,6 +338,34 @@ input[type="radio"].visually-hidden {
     }
 }
 
+.slider {
+    background-color: #e8e8e8;
+    border-top: 1px solid #d2d2d2;
+
+    &__item {
+        height: 400px;        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__descr {       
+        max-width: 460px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 2.65em;
+        font-weight: 600;
+    }
+
+    &__txt {
+        margin-bottom: 25px;
+        font-size: 1.13em;
+    }
+}
+
 
 .main-products {
     padding: 70px 0 40px 0;    
@@ -364,7 +403,7 @@ input[type="radio"].visually-hidden {
             background-color: #f0f0f0;
 
             img {
-                transform: scale(1.1);
+                transform: scale(1.03);
             }
         }
     }

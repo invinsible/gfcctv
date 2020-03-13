@@ -155,7 +155,7 @@ input[type="radio"].visually-hidden {
 
 .btn {
   position: relative;
-  padding: 10px 17px;
+  padding: 6px 25px;
   display: inline-block;
   font-size: 0.85em;
   color: #3d4248;
@@ -168,7 +168,18 @@ input[type="radio"].visually-hidden {
   transition: 0.3s;
 }
 
+.btn--orange {
+  color: #fa7e19;
+  border-color: #fa7e19;
+}
+
+.btn--orange:hover {
+  background-color: #fa7e19;
+  color: #fff;
+}
+
 .btn--callback {
+  padding: 10px 17px;
   color: #ff8c38;
   border-color: #f3997b;
 }
@@ -336,6 +347,43 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.slider {
+  background-color: #e8e8e8;
+  border-top: 1px solid #d2d2d2;
+}
+
+.slider__item {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider__descr {
+  max-width: 460px;
+}
+
+.slider__title {
+  margin-bottom: 10px;
+  font-size: 2.65em;
+  font-weight: 600;
+}
+
+.slider__txt {
+  margin-bottom: 25px;
+  font-size: 1.13em;
+}
+
 .main-products {
   padding: 70px 0 40px 0;
   background-color: #fff;
@@ -380,8 +428,8 @@ input[type="radio"].visually-hidden {
 }
 
 .items-carousel__wrapper:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .items-carousel__link {
