@@ -108,6 +108,10 @@ input[type="radio"].visually-hidden {
         align-items: center;
     }
 
+    &--small {
+        max-width: 1040px;
+    }
+
     @media (max-width: 900px) {
         padding: 0 20px;
     }
@@ -464,12 +468,14 @@ input[type="radio"].visually-hidden {
     }
 
     &__item {
-        flex: 1;
-        border-right: 1px solid #bfbfbf; 
+        max-width: 350px;
+        flex: 1;        
         border-top: 1px solid #bfbfbf;
-
+        
         &:last-child {
-            border-right: 0
+            .news__txt {
+                border-right: 0;
+            }
         }
     }
 
@@ -485,8 +491,18 @@ input[type="radio"].visually-hidden {
         }
     }
 
+    &__txt {
+        padding: 30px 25px 50px 35px;          
+        border-right: 1px solid #bfbfbf;     
+    }
+
     &__img {
-        position: relative;
+        position: relative;        
+        height: 150px;
+        
+        img {
+            height: 100%;
+        }
 
         &::after {
             position: absolute;
@@ -501,13 +517,29 @@ input[type="radio"].visually-hidden {
     }
 
     &__date {
+        margin-bottom: 10px;
+        display: block;
         font-size: 0.75em;
         color: #acacac;
     }
 
     &__title {
         font-size: 1em;
+        font-weight: 400;
+        line-height: 1.2;
     }
+}
+
+.main-text {
+    padding: 20px 0 45px 0;
+    background-color: #f0f0f0;
+
+    p {
+        margin-bottom: 10px;
+        font-size: 0.85em;
+        line-height: 1.35;
+    }
+    
 }
 
 .contact-us {
