@@ -384,6 +384,57 @@ input[type="radio"].visually-hidden {
   font-size: 1.13em;
 }
 
+.main-catalog {
+  padding-bottom: 45px;
+  background-color: #e8e8e8;
+}
+
+.grid__sizer {
+  width: 23%;
+}
+
+.grid__gutter {
+  width: 2%;
+}
+
+.grid__item {
+  display: block;
+  padding: 25px 30px;
+  width: 23%;
+  height: 205px;
+  float: left;
+  margin-bottom: 25px;
+  background-color: #fa7e19;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+}
+
+.grid__item--big {
+  width: 47%;
+}
+
+.grid__item--height {
+  height: 300px;
+}
+
+.grid__title {
+  font-size: 1.25em;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.grid__title span {
+  display: block;
+  font-size: 0.75em;
+}
+
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .main-products {
   padding: 70px 0 40px 0;
   background-color: #fff;
