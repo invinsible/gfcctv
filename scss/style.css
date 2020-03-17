@@ -76,6 +76,12 @@ body {
   color: #333333;
 }
 
+@media (max-width: 1080px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -269,6 +275,12 @@ input[type="radio"].visually-hidden {
   border-bottom-color: transparent;
 }
 
+@media (max-width: 980px) {
+  .logo {
+    width: 120px;
+  }
+}
+
 .header__top {
   background-color: #3d4248;
 }
@@ -348,6 +360,18 @@ input[type="radio"].visually-hidden {
   background-color: #3d4248;
 }
 
+@media (max-width: 1080px) {
+  .main-menu__link--catalog {
+    padding-right: 33px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .main-menu__link {
+    padding: 5px 15px;
+  }
+}
+
 .h-contacts {
   margin-left: 90px;
 }
@@ -384,6 +408,12 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+@media (max-width: 1200px) {
+  .h-contacts {
+    margin-left: 20px;
+  }
+}
+
 .slider {
   background-color: #e8e8e8;
   border-top: 1px solid #d2d2d2;
@@ -404,6 +434,14 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (max-width: 980px) {
+  .slider__item {
+    height: 300px;
+  }
 }
 
 .slider__descr {
@@ -422,8 +460,19 @@ input[type="radio"].visually-hidden {
 }
 
 .main-catalog {
-  padding-bottom: 45px;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: #e8e8e8;
+}
+
+.main-catalog .btn {
+  display: block;
+  max-width: 150px;
+  margin: auto;
+}
+
+.grid {
+  margin-bottom: 1%;
 }
 
 .grid__sizer {
@@ -469,31 +518,42 @@ input[type="radio"].visually-hidden {
   height: 300px;
 }
 
-.grid__item:nth-of-type(2) {
-  background-color: #b3aba4;
+.grid__item--height:not(.grid__item--big) .grid__img {
+  width: 80%;
 }
 
-.grid__item:nth-of-type(3) {
-  background-color: #949495;
+@media (max-width: 1080px) {
+  .grid__item--height {
+    height: 250px;
+  }
 }
 
-.grid__item:nth-of-type(4) {
-  background-color: #bebebe;
+.grid__item:not(.grid__item--big) .catalog-link {
+  margin-left: auto;
 }
 
-.grid__item:nth-of-type(5) {
+.grid__item:nth-of-type(7) {
   background-color: #b3aba4;
 }
 
 .grid__item:nth-of-type(6) {
+  background-color: #949495;
+}
+
+.grid__item:nth-of-type(5) {
+  background-color: #bebebe;
+}
+
+.grid__item:nth-of-type(4) {
+  background-color: #b3aba4;
+}
+
+.grid__item:nth-of-type(8) {
   background-color: #3d4248;
 }
 
 .grid__item:hover {
   background-color: #4c5056;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -501,12 +561,13 @@ input[type="radio"].visually-hidden {
 }
 
 .grid__item:hover .grid__title {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  margin-top: 0;
 }
 
 .grid__item:hover .grid__sub {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .grid__item:hover:not(.grid__item--big) .grid__img {
@@ -517,7 +578,12 @@ input[type="radio"].visually-hidden {
 .grid__sub {
   margin-top: 5%;
   max-width: 280px;
+  height: 100%;
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .grid__sub-link {
@@ -525,6 +591,10 @@ input[type="radio"].visually-hidden {
   display: block;
   font-size: 0.85em;
   text-transform: none;
+}
+
+.grid__sub .catalog-link {
+  margin-top: auto;
 }
 
 .grid__img {
@@ -550,9 +620,14 @@ input[type="radio"].visually-hidden {
           transform: translateX(50%);
 }
 
+@media (max-width: 1180px) {
+  .grid__img {
+    width: 90%;
+  }
+}
+
 .grid__title {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  margin: auto 0 0 0;
   font-size: 1.25em;
   line-height: 1.3;
   font-weight: 400;
@@ -567,6 +642,12 @@ input[type="radio"].visually-hidden {
 .grid__title span {
   display: block;
   font-size: 0.75em;
+}
+
+@media (max-width: 1080px) {
+  .grid__title {
+    font-size: 1.05em;
+  }
 }
 
 .grid::after {
@@ -648,7 +729,7 @@ input[type="radio"].visually-hidden {
 
 .items-carousel__title {
   margin-top: auto;
-  font-size: 14px;
+  font-size: 0.85em;
   font-weight: 400;
   text-align: center;
 }
