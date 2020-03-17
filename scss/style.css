@@ -325,10 +325,25 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+@media (max-width: 900px) {
+  .main-menu__mobile {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #878787;
+  }
+}
+
 .main-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 900px) {
+  .main-menu__list {
+    display: none;
+  }
 }
 
 .main-menu__link {
@@ -514,6 +529,12 @@ input[type="radio"].visually-hidden {
   width: 47%;
 }
 
+@media (max-width: 1320px) {
+  .grid__item--big .grid__img {
+    width: 60%;
+  }
+}
+
 .grid__item--height {
   height: 300px;
 }
@@ -676,35 +697,36 @@ input[type="radio"].visually-hidden {
   margin-top: -10px;
 }
 
-.items-carousel {
+.products {
   margin-bottom: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.items-carousel__item {
+.products__item {
   padding: 0 20px;
-  width: 295px;
-  max-width: 295px;
+  width: 20%;
 }
 
-.items-carousel__wrapper {
+.products__wrapper {
   padding: 0 5px 35px 5px;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
-.items-carousel__wrapper:hover {
+.products__wrapper:hover {
   background-color: #f0f0f0;
 }
 
-.items-carousel__wrapper:hover img {
+.products__wrapper:hover img {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
 
-.items-carousel__link {
+.products__link {
   min-height: 315px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,22 +741,24 @@ input[type="radio"].visually-hidden {
           align-items: center;
 }
 
-.items-carousel__link img {
-  margin-top: auto;
+.products__link img {
+  margin-top: 20%;
+  height: 150px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-.items-carousel__title {
-  margin-top: auto;
+.products__title {
+  margin-top: 20%;
+  max-width: 272px;
   font-size: 0.85em;
   font-weight: 400;
   text-align: center;
 }
 
-.items-carousel__title span {
+.products__title span {
   display: block;
   font-weight: 600;
 }
@@ -910,7 +934,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-us__small {
-  margin-left: 10%;
+  margin-left: auto;
   font-size: 0.85em;
 }
 
