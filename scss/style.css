@@ -292,7 +292,7 @@ main {
 }
 
 .top h1 {
-  margin-bottom: 2.5%;
+  padding-bottom: 2.5%;
   font-size: 1.9em;
 }
 
@@ -759,6 +759,22 @@ main {
   background-color: #e8e8e8;
 }
 
+.catalog {
+  padding: 2.5em 0;
+  border-top: 1px solid #d2d2d2;
+  background-color: #f0f0f0;
+}
+
+.catalog .grid__item {
+  margin-right: 35px;
+  width: 23%;
+  height: 303px;
+}
+
+.catalog .grid__item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .grid {
   margin-bottom: 1%;
 }
@@ -776,9 +792,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
   width: 23%;
   height: 205px;
+  padding: 20px;
   float: left;
   margin-bottom: 25px;
   background-color: #fa7e19;

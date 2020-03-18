@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog Gfcctv</title>
+    <title>Products Gfcctv</title>
     <!-- <link rel="preload" href="./assets/fonts/open-sans-regular.woff2" as="font">
     <link rel="preload" href="./assets/fonts/open-sans-600.woff2" as="font"> -->
     <link rel="stylesheet" href="./scss/style.css">
@@ -142,68 +142,202 @@
                         <a class="breadcrumbs__link" href="#">Камеры видеонаблюдения</a>
                     </li>
                 </ul>
-                <h1>Каталог оборудования</h1>
+                <h1>Камеры видеонаблюдения</h1>
+                <ul class="categories">
+                    <li class="categories__item">
+                        <a class="categories__link" href="#" ><span>IP видеокамеры</span></a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#" ><span>AHD видеокамеры</span></a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#" ><span>HD-SDI видеокамеры</span></a>
+                    </li>
+                    <li class="categories__item">
+                        <a class="categories__link" href="#" ><span>Гибридные видеорегистраторы</span></a>
+                    </li>                    
+                </ul>
             </div>
         </section>
 
-        <section class="catalog">
-            <div class="container">                             
-                <div class="grid">                    
-                    <div class="grid__item" href="#">
-                        <h3 class="grid__title" href="#"><a href="#"><span>ТВ камеры</span>Видеонаблюдения</a></h3>
-                        <div class="grid__sub">
-                            <ul class="grid__list">
-                                <li><a class="grid__sub-link" href="#">ТВ камеры HD</a></li>
-                                <li><a class="grid__sub-link" href="#">ТВ камеры IP</a></li>
-                                <li><a class="grid__sub-link" href="#">ТВ камеры HD-SDI</a></li>
-                            </ul>
-                            <a class="catalog-link" href="#">В раздел <i class="arrow"></i></a>
-                        </div>                        
-                        <div class="grid__img"><img src="./img/catalog-img1.png" alt=""></div>                        
-                    </div>
-                    <div class="grid__item" href="#">
-                        <h3 class="grid__title" href="#"><a href="#"><span>CCTV</span>Объективы</a></h3>
-                        <div class="grid__sub">
-                            <ul class="grid__list">
-                                <li><a class="grid__sub-link" href="#">Фиксированные объективы</a></li>
-                                <li><a class="grid__sub-link" href="#">Вариофокальные объективы</a></li>                                
-                            </ul>
-                            <a class="catalog-link" href="#">В раздел <i class="arrow"></i></a>
-                        </div>
-                        <div class="grid__img"><img src="./img/catalog-img2.png" alt=""></div>                        
-                    </div>
-                    <div class="grid__item" href="#">
-                        <h3 class="grid__title" href="#"><a href="#"><span>Специализированные</span>мониторы</a></h3>
-                        <div class="grid__sub">
-                            <ul class="grid__list">
-                                <li><a class="grid__sub-link" href="#">Фиксированные объективы</a></li>
-                                <li><a class="grid__sub-link" href="#">Вариофокальные объективы</a></li>                                
-                            </ul>
-                            <a class="catalog-link" href="#">В раздел <i class="arrow"></i></a>
-                        </div>
-                        <div class="grid__img"><img src="./img/catalog-img3.png" alt=""></div>                        
-                    </div>
-                    <div class="grid__item" href="#">
-                        <h3 class="grid__title" href="#"><a href="#"><span>Вызывные панели и</span>видеодомофоны</a></h3>
-                        <div class="grid__img"><img src="./img/catalog-img5.png" alt=""></div>
-                        
-                    </div>
-                    <div class="grid__item" href="#">
-                        <h3 class="grid__title"><a href="#"><span>Блоки</span>питания</a></h3>
-                        <div class="grid__img"><img src="./img/catalog-img4.png" alt=""></div>                        
-                    </div>
-                    <div class="grid__item" href="#">
-                        <h3 class="grid__title"><a href="#"><span>Электромагнитные</span>замки</a></h3>
-                        <div class="grid__img"><img src="./img/catalog-img7.png" alt=""></div>                        
-                    </div>
-                    <div class="grid__item" href="#">
-                        <h3 class="grid__title"><a href="#"><span>Цифровые</span>видеорегистраторы</a></h3>
-                        <div class="grid__img"><img src="./img/catalog-img6.png" alt=""></div>                        
+        <section class="filter">
+            <div class="container">
+                <h2 class="visually-hidden">Фильтр</h2>
+                <div class="filter__result">
+                    <p class="result-nums"><span>56</span> моделей</p>
+                    <button class="filter__btn filterBtn active">Фильтр</button>
+                </div>
+            </div>
+            <div class="filterHidden">
+                <div class="filter__wrapper">
+                    <div class="container">                        
+                        <form action="POST" class="filter__form">
+                            <div class="filter__item">
+                                <p class="filter__name">Конструктивное исполнение</p>
+                                <select name="" id="" class="filter__select">
+                                    <option value="">Купольная</option>
+                                    <option value="">Не купольная</option>
+                                </select>
+                            </div>
+                            <div class="filter__item">
+                                <p class="filter__name">ИК подсветка</p>
+                                <select name="" id="" class="filter__select">
+                                    <option value="">Купольная</option>
+                                    <option value="">Не купольная</option>
+                                </select>
+                            </div>
+                            <div class="filter__item">
+                                <p class="filter__name">Телевизионный стандарт</p>
+                                <select name="" id="" class="filter__select">
+                                    <option value="">Купольная</option>
+                                    <option value="">Не купольная</option>
+                                </select>
+                            </div>
+                            <div class="filter__item">
+                                <p class="filter__name">Фокусное расстояние</p>
+                                <select name="" id="" class="filter__select">
+                                    <option value="">Купольная</option>
+                                    <option value="">Не купольная</option>
+                                </select>
+                            </div>
+                            <div class="filter__item">
+                                <p class="filter__name">Разрешение</p>
+                                <select name="" id="" class="filter__select">
+                                    <option value="">Купольная</option>
+                                    <option value="">Не купольная</option>
+                                </select>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                
-                
+                <div class="filter__apply">                    
+                    <p>Примененные фильтры</p>
+                    <a class="filter__apply-link" href="#">2Мп</a>
+                    <a class="filter__apply-link" href="#">Купольная</a>
+                    <button class="reset">Сбросить</button>                                      
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="main-products">
+            <div class="container">  
+                <h2 class="visually-hidden">Товары раздела</h2>            
+                <ul class="products">
+                    <li class="products__item">
+                        <div class="products__wrapper">
+                            <a class="products__link" href="#">
+                                <img src="./img/product.png" alt="">
+                                <h3 class="products__title">Сетевой видеорегистратор <span>GF-NV2404UHD</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__wrapper">
+                            <a class="products__link" href="#">
+                                <img src="./img/product2.png" alt="">
+                                <h3 class="products__title">Усилитель линии PoE  <span>GF-AC111</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__wrapper">
+                            <a class="products__link" href="#">
+                                <img src="./img/product3.png" alt="">
+                                <h3 class="products__title">Антивандальная HD камера  видеонаблюдения <span>GF-VIR4306AHD2.0 v3</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__wrapper">
+                            <a class="products__link" href="#">
+                                <img src="./img/product3.png" alt="">
+                                <h3 class="products__title">Антивандальная HD камера  видеонаблюдения <span>GF-VIR4306AHD2.0 v3</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__wrapper">
+                            <a class="products__link" href="#">
+                                <img src="./img/product3.png" alt="">
+                                <h3 class="products__title">Уличная HD камера видеонаблюдения <span>GF-IR4353AHD5.0-VF</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn--center">Показать еще</button>
+                <div class="contact-us">
+                    <p class="contact-us__txt">Не нашли то, что искали? Свяжитесь с нами!</p>
+                    <p class="contact-us__small">Быстрая связь: <a href="tel:89816800227">+7 981 6800227</a></p>
+                    <ul class="contact-us__list">
+                        <li class="contact-us__item">
+                            <a class="contact-us__link" target="_blank" href="#">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#icon-skype"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-us__item">
+                            <a class="contact-us__link" target="_blank" href="#">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#icon-whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-us__item">
+                            <a class="contact-us__link" target="_blank" href="#">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#icon-telegramm"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-us__item">
+                            <a class="contact-us__link" target="_blank" href="#">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#icon-viber"></use>
+                                </svg>
+                            </a>
+                        </li>                        
+                    </ul>
+                    <button class="btn btn--callback">
+                        <svg width="25" height="25">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                    Обратный звонок</button>
+                </div>
             </div>                                
+        </section>
+
+        <section class="vision">
+            <div class="container">
+                <h3>Вы недавно смотрели</h3>
+                <ul class="products">
+                    <li class="products__item">
+                        <div class="products__wrapper products__wrapper--vision">
+                            <a class="products__link" href="#">
+                                <img src="./img/product.png" alt="">
+                                <h3 class="products__title"><span>GF-NV2404UHD</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__wrapper products__wrapper--vision">
+                            <a class="products__link" href="#">
+                                <img src="./img/product3.png" alt="">
+                                <h3 class="products__title"><span>GF-VIR4306AHD2.0 v3</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__wrapper products__wrapper--vision">
+                            <a class="products__link" href="#">
+                                <img src="./img/product2.png" alt="">
+                                <h3 class="products__title"><span>GF-VIR4306AHD2.0 v3</span></h3>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 

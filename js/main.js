@@ -1,4 +1,4 @@
-$('.grid').masonry({
+$('.gridJS').masonry({
   itemSelector: '.grid__item',
   columnWidth: '.grid__sizer',    
   gutter: '.grid__gutter',
