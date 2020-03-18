@@ -184,6 +184,12 @@ main {
   border-color: #fa7e19;
 }
 
+.btn--center {
+  display: block;
+  max-width: 150px;
+  margin: auto;
+}
+
 .btn--callback {
   padding: 10px 17px;
   color: #ff8c38;
@@ -544,6 +550,11 @@ main {
   }
 }
 
+.vision {
+  padding: 2em 0 2.5em 0;
+  border-top: 1px solid #d2d2d2;
+}
+
 @media (max-width: 980px) {
   .logo {
     width: 120px;
@@ -746,12 +757,6 @@ main {
   padding-top: 2%;
   padding-bottom: 2%;
   background-color: #e8e8e8;
-}
-
-.main-catalog .btn {
-  display: block;
-  max-width: 150px;
-  margin: auto;
 }
 
 .grid {
@@ -965,8 +970,11 @@ main {
   margin-top: -10px;
 }
 
-.products {
+.main-products .products {
   margin-bottom: 2%;
+}
+
+.products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -992,6 +1000,26 @@ main {
 .products__wrapper:hover img {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+.products__wrapper--vision {
+  padding: 0 5px 15px 5px;
+}
+
+.products__wrapper--vision:hover {
+  background-color: #fff;
+}
+
+.products__wrapper--vision .products__link {
+  min-height: auto;
+}
+
+.products__wrapper--vision .products__title {
+  margin-top: 10%;
+}
+
+.products__wrapper--vision img {
+  height: 130px !important;
 }
 
 .products__link {
@@ -1183,6 +1211,7 @@ main {
 
 .contact-us {
   padding: 19px 19px 19px 32px;
+  margin-top: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -178,6 +178,12 @@ main {
         border-color: #fa7e19;        
     }  
 
+    &--center {
+        display: block;
+        max-width: 150px;
+        margin: auto;
+    }
+
     &--callback {
         padding: 10px 17px;
         color: #ff8c38;
@@ -359,10 +365,6 @@ main {
 .filter {
     border-top: 1px solid #d2d2d2;
 
-    // &Hidden {
-    //     display: none;
-    // }
-
     &__result {
         padding: 12px 0;
         display: flex;
@@ -500,6 +502,11 @@ main {
             padding: 0 20px;
         }
     }
+}
+
+.vision {
+    padding: 2em 0 2.5em 0;
+    border-top: 1px solid #d2d2d2;
 }
 
 .logo {
@@ -678,13 +685,7 @@ main {
 .main-catalog {
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: #e8e8e8;
-
-    .btn {
-        display: block;
-        max-width: 150px;
-        margin: auto;
-    }
+    background-color: #e8e8e8;    
 }
 
 .grid {   
@@ -876,10 +877,13 @@ main {
             margin-top: -10px;
         }
     }
+
+    .products {
+        margin-bottom: 2%;
+    }
 }
 
-.products {
-    margin-bottom: 2%;
+.products {    
     display: flex;
     flex-wrap: wrap;
 
@@ -897,6 +901,26 @@ main {
 
             img {
                 transform: scale(1.03);
+            }
+        }
+        
+        &--vision {
+            padding: 0 5px 15px 5px;
+
+            &:hover {
+                background-color: #fff;
+            }
+
+            .products__link {
+                min-height: auto;
+            }
+
+            .products__title {
+                margin-top: 10%;
+            }
+
+            img {                
+                height: 130px!important;
             }
         }
     }
@@ -1078,6 +1102,7 @@ main {
 
 .contact-us {
     padding: 19px 19px 19px 32px;
+    margin-top: 4%;
     display: flex;
     align-items: center;    
     border: 2px solid #fa7e19;
