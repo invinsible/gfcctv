@@ -815,8 +815,8 @@ main {
         flex-direction: column;
         
         &-link {
-            margin-bottom: 15px;
-            display: block;
+            padding: 10px 30px 10px 0;
+            display: inline-block;
             font-size: 0.85em;
             text-transform: none;
         }
