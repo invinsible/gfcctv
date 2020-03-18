@@ -359,6 +359,10 @@ main {
 .filter {
     border-top: 1px solid #d2d2d2;
 
+    // &Hidden {
+    //     display: none;
+    // }
+
     &__result {
         padding: 12px 0;
         display: flex;
@@ -425,7 +429,7 @@ main {
     }
 
     &__wrapper {
-        padding: 30px 0 8px 0;
+        padding: 30px 0 5px 0;
         background-color: #cccccc;        
         border-bottom: 1px solid #d2d2d2;
         border-top: 1px solid #d2d2d2;
@@ -450,6 +454,51 @@ main {
         line-height: 1;
         color: #fff;
         text-align: right;
+    }
+
+    &__apply {
+        padding: 15px 40px;
+        margin: auto;
+        max-width: 1440px;  
+        display: flex;
+        align-items: center; 
+        font-size: 0.75em;
+        color: #878787;           
+        
+        &-link {
+            padding: 5px 15px;
+            margin-right: 5px;
+            display: block;
+            background-color: #cccccc;
+            color: #fff;
+            font-size: 0.75em;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        p {
+            margin-right: 45px;
+        }
+
+        .reset {
+            margin-left: 20px;
+            background: transparent;
+            color: #878787;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    
+        @media (max-width: 900px) {
+            padding: 0 20px;
+        }
     }
 }
 
@@ -840,7 +889,7 @@ main {
     }
 
     &__wrapper {
-        padding: 0 5px 35px 5px;
+        padding: 0 5px 25px 5px;
         transition: background-color 0.2s;        
 
         &:hover {
@@ -853,7 +902,7 @@ main {
     }
 
     &__link {
-        min-height: 315px;
+        min-height: 300px;
         display: flex;
         flex-direction: column;
         color: #333333;
@@ -867,7 +916,7 @@ main {
     }
 
     &__title {
-        margin-top: 20%;
+        margin-top: 26%;
         max-width: 272px;
         font-size: 0.85em;
         font-weight: 400;
