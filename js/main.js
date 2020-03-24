@@ -1,3 +1,4 @@
+// Masonry
 $('.gridJS').masonry({
   itemSelector: '.grid__item',
   columnWidth: '.grid__sizer',    
@@ -5,6 +6,8 @@ $('.gridJS').masonry({
   percentPosition: true
 });
 
+
+// Filter
 $('.filterBtn').click(function(e){
   e.preventDefault();
   $(this).toggleClass('active');
@@ -26,7 +29,7 @@ $(".tabBtn").click(function() {
   $(this).addClass("active");
 });
 
-
+//Slider photo item-page
 $('.photos-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -37,10 +40,17 @@ $('.photos-for').slick({
 });
 
 $('.photos-nav').slick({
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.photos-for',
   dots: false,
-  centerMode: false,
+  arrows: false,
+  centerMode: true,
   focusOnSelect: true
 });
+
+$('.main-menu__mobile').click(function(e){
+  e.preventDefault();
+  $(this).toggleClass('active');
+  $(this).next('.main-menu__list').slideToggle();
+})
