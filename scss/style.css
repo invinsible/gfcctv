@@ -1289,6 +1289,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news__item {
@@ -1438,6 +1440,20 @@ main {
   position: absolute;
   bottom: 20px;
   right: 0;
+}
+
+@media (max-width: 670px) {
+  .item__info .btn {
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .item__info {
+    padding-top: 30px;
+  }
 }
 
 .item__gallery {

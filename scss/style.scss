@@ -1135,6 +1135,7 @@ main {
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -1280,6 +1281,16 @@ main {
             position: absolute;
             bottom: 20px;
             right: 0;
+
+            @media (max-width: 670px) {
+                position: relative;
+                bottom: 0;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 670px) {
+            padding-top: 30px;
         }
     }
 
