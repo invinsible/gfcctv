@@ -49,6 +49,33 @@ $('.photos-nav').slick({
   focusOnSelect: true
 });
 
+$('.productsJs').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: true,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 670,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },    
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
 $('.main-menu__mobile').click(function(e){
   e.preventDefault();
   $(this).toggleClass('active');
